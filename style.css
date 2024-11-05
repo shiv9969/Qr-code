@@ -110,7 +110,7 @@ body{
 .box input[type="button"]
 {
     height: 40px;
-    width: 115px;
+    width: 100px;
     color: #000000;
     font-size: 2.3vh;
     margin-top: 25px;
@@ -123,7 +123,7 @@ body{
 
 .box button{
     height: 40px;
-    width: 115px;
+    width: 135px;
     color: #000000;
     font-size: 2.3vh;
     margin-top: 25px;
