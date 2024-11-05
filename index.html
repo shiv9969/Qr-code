@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i2f9m2t2.rocketcdn.me/wp-content/uploads/2014/04/shutterstock_175386392.jpg" type="image/x-icon">
+    <title>Meniya Sandip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <form>
+
+            <h2>Meniya Sandip</h2>
+
+            <div class="qr"></div>
+
+            <div class="text">
+                <p>Scan this QR or Use This UPI ID</p>
+            </div>
+
+            <span id="text" name="text">thehappyhour003@okicici</span>
+
+            <div class="btns">
+                <input type="button" value="Copy UPI" onclick="copyToClipboard()">
+                <button class="qrdoenlod" onclick="downloadImage()">Downlod QR</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script> function copyToClipboard() {
+        var tempInput = document.createElement("input");
+        tempInput.value = "thehappyhour003@okicici";
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        alert("Upi ID copied to clipboard !");
+    }
+
+    function downloadImage() {
+        var link = document.createElement('a');
+        link.href = 'QR.jpg';
+        link.download = 'QR.jpg';
+        link.click();
+        alert("QR Code Has Been Downloded !");
+    }
+</script>
+
+</html>
